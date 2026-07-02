@@ -1,4 +1,4 @@
-# diabetic-retinopathy-detection
+# Diabetic-Retinopathy-Detection
 
 # Create a virtual environment
 
