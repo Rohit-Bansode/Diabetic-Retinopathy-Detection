@@ -1,5 +1,10 @@
 # Diabetic-Retinopathy-Detection
 
+<<<<<<< HEAD
+=======
+## Download the Python Version 3.12
+
+>>>>>>> c4e72f4b6ac380ba70dfd87ba1eb366559975b17
 # Create a virtual environment
 
     python -m venv venv
