@@ -1,5 +1,7 @@
 # Diabetic-Retinopathy-Detection
 
+## Download the Python Version 3.12
+
 # Create a virtual environment
 
     python -m venv venv
