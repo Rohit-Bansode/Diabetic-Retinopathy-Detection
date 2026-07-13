@@ -8,18 +8,18 @@ Automated Diabetic Retinopathy Severity Classification using CBAM-Enhanced Effic
 
 1. [Overview](#overview)
 2. [Goals and Objectives](#goals-and-objectives)
-3. [Core Features](#core-features)
-4. [System Architecture](#system-architecture)
-5. [Technology Stack](#technology-stack)
-6. [Database Schema](#database-schema)
-7. [API Reference](#api-reference)
-8. [Installation](#installation)
-9. [Security](#security)
-10. [Testing Strategy](#testing-strategy)
-11. [Project Scope & Decisions](#project-scope--decisions)
-12. [Contributing](#contributing)
-13. [Contact](#contact)
+3. [System Architecture](#system-architecture)
+4. [Technology Stack](#technology-stack)
+5. [Database](#database)
+7. [Model Details](#model-details)
+8. [Results](#results)
+9. [Explainability (Grad-CAM)](#Explainability)
+10. [Streamlit Clinical Application](#streamlit-clinical-application)
+11. [Installation](#installation)
+13. [Contributing](#contributing)
+14. [Contact](#contact)
 
+______________
 ## Overview:
 Diabetic Retinopathy (DR) is an eye disease caused by diabetes that can damage the retina and may lead to vision loss or blindness if it is not detected early. Regular screening is important, but examining retinal images manually takes time and requires experienced ophthalmologists. In many rural and remote areas, access to eye specialists is limited, making early diagnosis difficult.
 
@@ -36,7 +36,7 @@ The model classifies retinal fundus images into the following five severity grad
 | 2 | Moderate NPDR |
 | 3 | Severe NPDR |
 | 4 | Proliferative DR |
-
+______________
 ## 🎯 Goals and Objectives
 
 **Primary Goal:** To build an automated Diabetic Retinopathy severity classification system using a CBAM-enhanced EfficientNetB3 model that accurately predicts disease severity, explains predictions with Grad-CAM, and provides real-time results through a Streamlit web application.
@@ -57,7 +57,7 @@ The model classifies retinal fundus images into the following five severity grad
 - Five grade-specific Grad-CAM heatmaps (rather than generic/black-box outputs).
 - Three-pronged imbalance mitigation strategy (no prior reviewed study combines all three).
 - A fully deployed clinical decision-support interface — grade, confidence, risk tier, follow-up timeline, and heatmap — not just a bare label.
-
+____________________
 ## 🏗️ System Architecture
 ```text
 ┌──────────────────────────────────────────────────────────────────────────────┐
